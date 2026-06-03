@@ -19,7 +19,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install -r requirements.txt
+          pip install -r day3-pipeline/requirements.txt
           pip install pytest flake8
 
       - name: Run Linter
@@ -32,4 +32,4 @@ jobs:
 
       - name: Execute Pipeline
         run: |
-          python main.py
+          python day3-pipeline/main.py
