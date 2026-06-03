@@ -28,7 +28,8 @@ jobs:
 
       - name: Run Tests
         run: |
-          pytest
+          pytest day3-pipeline/test/test_pipeline.py
+
 
       - name: Execute Pipeline
         run: |
