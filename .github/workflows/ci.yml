@@ -26,9 +26,11 @@ jobs:
         run: |
           flake8 .
 
-      - name: Run Tests
-        run: |
-          pytest day3-pipeline/test/test_pipeline.py
+      - name: Run pytest
+        env:
+          PYTHONPATH: day3-pipeline
+        run: pytest day3-pipeline/test/test_pipeline.py
+
 
 
       - name: Execute Pipeline
